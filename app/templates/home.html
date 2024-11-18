@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            padding: 1.5rem; /* Increases navbar height */
+        }
+        .navbar .navbar-brand, .navbar .btn {
+            margin-top: 5px;
+        }
+        header {
+            padding: 3rem 0; /* Increases header height */
+        }
+        header h1 {
+            margin-bottom: 1rem;
+        }
+        .feature-card {
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card h2 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Waste Management</a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <a href="{% url 'app:login' %}" class="btn btn-outline-light ms-3">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center">
+        <h1>Welcome to the Waste Management System</h1>
+        <p class="lead">Efficient waste tracking and management at your fingertips</p>
+    </header>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card feature-card">
+                    <div class="card-body">
+                        <h2>Track Waste</h2>
+                        <p>Keep an eye on waste collection schedules and monitor waste levels in real time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card">
+                    <div class="card-body">
+                        <h2>Manage Resources</h2>
+                        <p>Optimize resource allocation to improve waste collection efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card">
+                    <div class="card-body">
+                        <h2>Analyze Data</h2>
+                        <p>Use data insights to improve waste management and make informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3">
+        <p class="text-muted mt-2">© 2024 Waste Management System</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
