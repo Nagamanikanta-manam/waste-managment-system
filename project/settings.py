@@ -127,3 +127,11 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Or the SMTP server for your email provider
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'nagamanikanta2015@gmail.com'
+EMAIL_HOST_PASSWORD = 'nkuxtvvnsslvifuf'
+
+DEFAULT_FROM_EMAIL = 'Waste Management System'

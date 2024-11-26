@@ -17,6 +17,9 @@ urlpatterns = [
     # Profile settings route
     path('profile/', views.profile_view, name='profile'),
     path('logout/', views.custom_logout, name='logout'),
-
+    path('admin-dashboard/',views.admin_dashboard,name='admin_dashboard'),
     path('home/', views.home_view_l, name='log'),
+    path('assign-collector/<int:request_id>/', views.assign_collector, name='assign_collector'),
+    path('mark-completed/<int:request_id>/', views.mark_as_completed, name='mark_as_completed'),
+
 ]
